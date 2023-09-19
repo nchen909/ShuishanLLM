@@ -41,10 +41,16 @@
      }
 ```
 
-### SFT
+### SFT with lora
 
 ```bash
 deepspeed --num_gpus 8 --master_port=9901 src/train_bash.py     --deepspeed ds_config.json     --stage sft     --model_name_or_path /nchen909/workspace/codelab/CodeLlama-7b-Instruct-hf     --do_train     --dataset codesft     --template default     --finetuning_type lora     --lora_target q_proj,v_proj     --output_dir path_to_sft_checkpoint     --overwrite_cache     --per_device_train_batch_size 4     --gradient_accumulation_steps 4     --lr_scheduler_type cosine     --logging_steps 10     --save_steps 1000     --learning_rate 5e-5     --num_train_epochs 3.0     --plot_loss     --fp16     --overwrite_output_dir
+```
+
+### SFT with full param
+
+```bash
+deepspeed --num_gpus 8 --master_port=9901 src/train_bash.py --deepspeed ds_config_zero3.json --stage sft --model_name_or_path /nchen909/workspace/codelab/CodeLlama-7b-Instruct-hf --do_train --dataset code_exer --template default --finetuning_type full --output_dir path_to_sft_checkpoint --overwrite_cache --per_device_train_batch_size 1 --gradient_accumulation_steps 16 --lr_scheduler_type cosine --logging_steps 10 --save_steps 1000 --learning_rate 5e-5 --num_train_epochs 3.0 --fp16 --plot_loss  --overwrite_output_dir
 ```
 
 ### Test
