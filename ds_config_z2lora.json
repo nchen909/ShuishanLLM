@@ -1,0 +1,25 @@
+deepspeed setting
+  1 {
+  2   "train_batch_size": "auto",
+  3   "train_micro_batch_size_per_gpu": "auto",
+  4   "gradient_accumulation_steps": "auto",
+  5   "gradient_clipping": "auto",
+  6   "zero_allow_untested_optimizer": true,
+  7   "fp16": {
+  8     "enabled": "auto",
+  9     "loss_scale": 0,
+ 10     "initial_scale_power": 16,
+ 11     "loss_scale_window": 1000,
+ 12     "hysteresis": 2,
+ 13     "min_loss_scale": 1
+ 14   },
+ 15   "zero_optimization": {
+ 16     "stage": 2,
+ 17     "allgather_partitions": true,
+ 18     "allgather_bucket_size": 5e8,
+ 19     "reduce_scatter": true,
+ 20     "reduce_bucket_size": 5e8,
+ 21     "overlap_comm": false,
+ 22     "contiguous_gradients": true
+ 23   }
+ 24 }
