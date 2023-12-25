@@ -24,6 +24,8 @@
 
 清洗并收集大量中英文代码数据用于对话
 
+[codellm-7b-v1.4](https://huggingface.co/nchen909/codellm-7b-v4)
+
 ## Getting Started
 
 ### Data Preparation
