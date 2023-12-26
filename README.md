@@ -103,3 +103,5 @@ python src/export_model.py \
 ![image-20230919150942773](README.assets/image-20230919150942773.png)
 
 ![image-20230919150944992](README.assets/image-20230919150944992.png)
+<img width="1437" alt="image" src="https://github.com/nchen909/ChineseCodeLlaMA/assets/40982544/405c3255-551a-4b55-9dfc-3c29ac602632">
+
