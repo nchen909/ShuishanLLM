@@ -125,3 +125,4 @@ python src/export_model.py \
 ![image-20230919150944992](README.assets/image-20230919150944992.png)
 <img width="1437" alt="image" src="https://github.com/nchen909/ChineseCodeLlaMA/assets/40982544/405c3255-551a-4b55-9dfc-3c29ac602632">
 
+[演示视频链接](https://markdown-picture-1302861826.cos.ap-shanghai.myqcloud.com/%E5%BD%95%E5%88%B6_2024_01_31_22_09_03_577%20%282%29.mp4)
