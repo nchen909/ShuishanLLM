@@ -84,8 +84,15 @@ export default function InputBox(props: {
                         </Button>
                     </Grid>
                 </Grid>
-                <Typography variant="caption" style={{ opacity: 0.3 }}>
-                    {t('[Enter] send, [Shift+Enter] line break, [Ctrl+Enter] send without generating')}
+                <Typography variant="caption" style={{ opacity: 0.3 }} align="center">
+                    {t('This site was created by School of Data, East China Normal University')}
+                    <br/>
+                    {t('目前为测试版本，生成结果仅供参考')}
+                    <br/>
+                    {t('访问我们的Github页面查看更多信息：')}
+                    {t('https')}
+                    {t('://github.com/')}
+                    {t('nchen909/ShuishanLLM')}
                 </Typography>
             </Stack>
         </form>
