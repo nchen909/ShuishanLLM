@@ -61,6 +61,8 @@ import { SortableContext, arrayMove, sortableKeyboardCoordinates, verticalListSo
 import { restrictToVerticalAxis } from '@dnd-kit/modifiers'
 import { SortableItem } from './components/SortableItem'
 import InputBox from './components/InputBox'
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
 
 function Main() {
     const { t } = useTranslation()
@@ -161,6 +163,18 @@ function Main() {
     const [atScrollTop, setAtScrollTop] = React.useState(false)
     const [atScrollBottom, setAtScrollBottom] = React.useState(false)
     const [needScroll, setNeedScroll] = React.useState(false)
+
+    const itemData = [
+        {
+            img: 'https://markdown-picture-1302861826.cos.ap-shanghai.myqcloud.com/img/2024/02/20/20240220203614-1.png',
+            title: 'ECNU'
+        },
+        {
+            img: 'https://markdown-picture-1302861826.cos.ap-shanghai.myqcloud.com/img/2024/02/20/20240220215113.png',
+            title: 'DATA'
+        }
+    ]
+
     useEffect(() => {
         if (!messageListRef.current) {
             return
@@ -533,6 +547,24 @@ function Main() {
                             position: 'relative',
                         }}
                     >
+                                                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100px' }}>
+                            <ImageList sx={{ width: 'auto', height: 100, flexWrap: 'nowrap', transform: 'translateZ(0)' }} cols={2} gap={8}>
+                                {itemData.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                    style={{ height: '100px', width: 'auto' }} // 保持宽高比不变
+                                    />
+                                </ImageListItem>
+                                ))}
+                            </ImageList>
+                            </div>
+                        <Typography variant="h4" component="div" sx={{ textAlign: 'center', mt: 1 }}>
+                            水杉大模型
+                        </Typography>
                         <Toolbar style={{ padding: '0 10px' }}>
                             <IconButton onClick={() => setShowMenu(!showMenu)}>
                                 {!showMenu ? (
@@ -547,6 +579,7 @@ function Main() {
                                     <MenuOpenIcon style={{ fontSize: '26px' }} />
                                 )}
                             </IconButton>
+                            {/* Untitled */}
                             <Typography
                                 variant="h6"
                                 color="inherit"

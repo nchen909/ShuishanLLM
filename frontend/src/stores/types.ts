@@ -32,7 +32,7 @@ export function createSession(name = 'Untitled'): Session {
                 id: uuidv4(),
                 role: 'system',
                 content:
-                    '',
+                    '你好, 我是水杉大模型, 一个由华东师范大小数据科学与工程学院开发的大模型语言, 目前处于测试阶段, 请问有什么可以帮到您?',
             },
         ],
     }
