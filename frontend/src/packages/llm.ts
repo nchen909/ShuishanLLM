@@ -77,26 +77,12 @@ export async function chat(
             if (message === '[DONE]') {
                 return
             }
+
             const data = JSON.parse(message)
-            const newMessage = {
-                id: data.id,
-                object: data.object,
-                model: data.model,
-                created: data.created,
-                choices: data.choices.map((choice:any) => ({ // 修改 choices 数组
-                    index: choice.index,
-                    delta: { // delta 字段取代原来的 message 字段
-                        role: choice.message.role,
-                        content: choice.message.content
-                    },
-                    finish_reason: null // 置 finish_reason 字段为 null
-                })),
-                error: data.error
+            if (data.error) {
+                throw new Error(`Error from OpenAI: ${JSON.stringify(data)}`)
             }
-            if (newMessage.error) {
-                throw new Error(`Error from OpenAI: ${JSON.stringify(newMessage)}`)
-            }
-            const text = newMessage.choices[0]?.delta?.content
+            const text = data.choices[0]?.delta?.content
             if (text !== undefined) {
                 fullText += text
                 if (onText) {
