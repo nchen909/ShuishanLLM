@@ -41,7 +41,6 @@ export async function writeSettings(settings: Settings) {
     if (!settings.apiHost) {
         settings.apiHost = getDefaultSettings().apiHost
     }
-    console.log('writeSettings.apiHost', settings.apiHost)
     return runtime.writeStore('settings', settings)
 }
 
@@ -86,7 +85,7 @@ export async function writeSessions(sessions: Session[]) {
 export default function useStore() {
     const { i18n } = useTranslation()
 
-    const [version, _setVersion] = useState('水杉大模型')
+    const [version, _setVersion] = useState('ShuishanLLM')
     const [needCheckUpdate, setNeedCheckUpdate] = useState(false)
     const updateCheckTimer = useRef<NodeJS.Timeout>()
     useEffect(() => {
