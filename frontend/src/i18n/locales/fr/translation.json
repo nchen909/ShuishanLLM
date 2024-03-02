@@ -48,7 +48,7 @@
   "star": "Étoile",
   "unstar": "Retirer l'étoile",
   "About": "À propos",
-  "About Chatbox": "À propos de Chatbox",
+  "About ShuishanLLM": "À propos de Chatbox",
   "close": "Fermer",
   "About Message": "Votre copilote ultime sur le bureau. Chatbox est une application de bureau et des outils de développement gratuits et open-source pour GPT. Dévelopée par <0>{{Author}}</0> et la communauté",
   "Auther Message": "J'ai créé Chatbox pour mon usage personnel et c'est génial de voir autant de personnes l'apprécier ! Si vous souhaitez soutenir le développement, un don serait grandement apprécié, bien que cela soit entièrement facultatif. Merci beaucoup, Benn",
@@ -61,5 +61,8 @@
   "temperature": "Température",
   "meticulous": "Méticuleux",
   "creative": "Créatif", 
-  "Special thanks to the following sponsors:": "Un grand merci aux sponsors suivants :"
+  "Special thanks to the following sponsors:": "Un grand merci aux sponsors suivants :",
+  "LLM": "ShuishanLLM",
+  "About LLM": "A propos du grand modèle de Metasequoia",
+  "website": "https://github.com/nchen909/ShuishanLLM"
 }

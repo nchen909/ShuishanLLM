@@ -12,8 +12,8 @@ import { useTranslation } from 'react-i18next'
 export function getDefaultSettings(): Settings {
     return {
         openaiKey: '',
-        apiHost: 'http://49.52.27.14:6605/predict',
-        model: 'gpt-3.5-turbo',
+        apiHost: 'http://61.241.103.34:8088/v1/chat/completions',
+        model: 'shuishanllm',
         temperature: 0.7,
         maxContextSize: '4000',
         maxTokens: '2048',
@@ -41,7 +41,6 @@ export async function writeSettings(settings: Settings) {
     if (!settings.apiHost) {
         settings.apiHost = getDefaultSettings().apiHost
     }
-    console.log('writeSettings.apiHost', settings.apiHost)
     return runtime.writeStore('settings', settings)
 }
 
@@ -86,7 +85,7 @@ export async function writeSessions(sessions: Session[]) {
 export default function useStore() {
     const { i18n } = useTranslation()
 
-    const [version, _setVersion] = useState('水杉大模型')
+    const [version, _setVersion] = useState('ShuishanLLM')
     const [needCheckUpdate, setNeedCheckUpdate] = useState(false)
     const updateCheckTimer = useRef<NodeJS.Timeout>()
     useEffect(() => {

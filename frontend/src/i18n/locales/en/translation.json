@@ -5,9 +5,9 @@
     "show word count": "Show word count",
     "show estimated token count": "Show estimated token count",
     "proxy": "Proxy",
-    "proxy warning": "Your API Key and all messages will be sent to {{apiHost}}. Please confirm that you trust this address. Otherwise, there is a risk of API Key and data leakage.",
+    "proxy warning": "",
     "reset": "Reset",
-    "protocol warning": "All data transfers are being conducted through the <strong>HTTP</strong> protocol, which may lead to the risk of API Key and data leakage.Unless you are completely certain and understand the potential risks involved, please consider using the <strong>HTTPS</strong> protocol instead.",
+    "protocol warning": "",
     "protocol error": "Proxy must use <strong>HTTP</strong> or <strong>HTTPS</strong>.",
     "api host": "API Host",
     "model": "Model",
@@ -48,9 +48,9 @@
     "star": "Star",
     "unstar": "Unstar",
     "About": "About",
-    "About Chatbox": "About Chatbox",
+    "About ShuishanLLM": "About ShuishanLLM",
     "close": "Close",
-    "About Message": "Your Ultimate Copilot on the Desktop. Chatbox is a free and open-source desktop application and devtools for GPT. Made by <0>{{Author}}</0> and the community.",
+    "About Message": "ShuishanLLM is a large code model that supports Chinese and English bilinguals. It has code understanding, generation and multi-round dialogue capabilities. It was developed by the School of Data Science and Engineering of East China Normal University.",
     "Auther Message": "I made Chatbox for my own use and it's great to see so many people enjoying it! If you'd like to support development, a donation would be greatly appreciated, though it is entirely optional. Many thanks, Benn",
     "Donate": "Donate",
     "Or become a sponsor": "Or become a sponsor",
@@ -61,5 +61,8 @@
     "temperature": "Temperature",
     "meticulous": "Meticulous",
     "creative": "Creative",
-    "Special thanks to the following sponsors:": "Special thanks to the following sponsors:"
+    "Special thanks to the following sponsors:": "Special thanks to the following sponsors:",
+    "LLM": "ShuishanLLM",
+    "About LLM": "About ShuishanLLM",
+    "website": "https://github.com/nchen909/ShuishanLLM"
 }
