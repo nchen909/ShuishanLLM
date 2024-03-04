@@ -18,3 +18,13 @@
 | 训练数据       | 水杉大模型使用经过高质量过滤且有合规开源许可的百万级代码与对话数据进行训练，部分处理前开源数据来源参阅数据章节，对话数据部分使用自研框架HugNLP数据。|
 | 评测结果       | 2024年2月在HumanEval-Python上达到80.5的pass@1，超越Deepseek-Coder Instruct 33B的79.3。                |
 | 伦理局限与免责声明 | 水杉大模型所使用数据由开源资源构成，且当前训练的模型属于SFT(Supervised Fine-tuning)模型，在某些情况下，该模型可能会对用户的提示做出不准确或令人反感的反应。因此，在部署任何模型应用程序之前，开发者应该根据他们对模型的具体应用进行安全测试和调整。模型禁止商用，由于使用者恶意使用导致的法律道德诉讼等危害或风险，本团队概不负责。所有解释权归本团队所有。|
+
+# Citation
+@misc{chen2024shuishanllm,
+  title={ShuishanLLM},
+  author={Nuo Chen, Jiayi Wu, Chunxian Zhang},
+  year = {2024},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/nchen909/ShuishanLLM}},
+}
