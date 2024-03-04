@@ -20,6 +20,7 @@
 | 伦理局限与免责声明 | 水杉大模型所使用数据由开源资源构成，且当前训练的模型属于SFT(Supervised Fine-tuning)模型，在某些情况下，该模型可能会对用户的提示做出不准确或令人反感的反应。因此，在部署任何模型应用程序之前，开发者应该根据他们对模型的具体应用进行安全测试和调整。模型禁止商用，由于使用者恶意使用导致的法律道德诉讼等危害或风险，本团队概不负责。所有解释权归本团队所有。|
 
 # Citation
+```angular2
 @misc{chen2024shuishanllm,
   title={ShuishanLLM},
   author={Nuo Chen, Jiayi Wu, Chunxian Zhang},
@@ -28,3 +29,4 @@
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/nchen909/ShuishanLLM}},
 }
+```
